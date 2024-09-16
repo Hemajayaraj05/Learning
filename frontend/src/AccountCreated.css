@@ -1,0 +1,27 @@
+.account-created {
+    width: 75%;
+    padding: 40px;
+    background-color: white;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .next-btn {
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    background-color: #2ecc71;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .next-btn:hover {
+    background-color: #27ae60;
+  }
+  

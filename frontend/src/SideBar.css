@@ -1,0 +1,21 @@
+.sidebar {
+    width: 25%;
+    background-color: #D7D9E4;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .sidebar h2 {
+    color: #2ecc71;
+    font-size: 24px;
+  }
+  
+  .sidebar p {
+    margin-top: 20px;
+  }
+  
+  .sidebar a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
