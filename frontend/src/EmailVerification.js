@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './EmailVerification.css';
 
-
 const EmailVerification = () => {
   const [formData, setFormData] = useState({
     email: '',
@@ -13,6 +12,9 @@ const EmailVerification = () => {
 
   const [otpSent, setOtpSent] = useState(false);
   const navigate = useNavigate();
+  
+  // Retrieve the selected account type from localStorage or context
+  const accountType = localStorage.getItem('accountType') || ''; 
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -36,15 +38,21 @@ const EmailVerification = () => {
   };
 
   const handleNext = () => {
-    navigate('/basic-info');
+    if (accountType === 'farmer') {
+      navigate('/basic-info');
+    } else if (accountType === 'buyer') {
+      navigate('/buyer-info');
+    } else if (accountType === 'service-provider') {
+      navigate('/service-provider-info');
+    }
   };
 
   return (
     <div className="email-verification-form">
-         <div className="progress-bar">
+      <div className="progress-bar">
         <div className="stage active">1</div>
         <div className="stage active">2</div>
-        <div className="stage ">3</div>
+        <div className="stage">3</div>
         <div className="stage">4</div>
         <div className="stage">5</div>
       </div>

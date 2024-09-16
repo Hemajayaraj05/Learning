@@ -33,8 +33,8 @@ const BankDetails = () => {
     <div className="bank-details-form">
       <div className="progress-bar">
         <div className="stage">1</div>
-        <div className="stage">2</div>
-        <div className="stage">3</div>
+        <div className="stage active">2</div>
+        <div className="stage active">3</div>
         <div className="stage active">4</div>
         <div className="stage">5</div>
       </div>

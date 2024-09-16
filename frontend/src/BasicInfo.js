@@ -56,8 +56,10 @@ const BasicInfo = () => {
       </div>
       <h2>Enter Your Basic Details</h2>
       <p>Tell us more about your farming business.</p>
+      <div className="container">
       <form onSubmit={handleSubmit}>
         {/* Title */}
+   
         <div className="form-group">
           <label>Title</label>
           <select name="title" value={formData.title} onChange={handleChange}>
@@ -265,8 +267,11 @@ const BasicInfo = () => {
           <button type="submit" className="next-btn">Next</button>
           <button type="button" className="skip-btn" onClick={handleSkip}>Skip for Now</button>
         </div>
+       
       </form>
     </div>
+    </div>
+  
   );
 };
 

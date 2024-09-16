@@ -1,21 +1,107 @@
+/* Sidebar Styles */
 .sidebar {
-    width: 25%;
-    background-color: #D7D9E4;
-    padding: 20px;
-    text-align: center;
+  position: fixed; /* Sidebar stays fixed */
+  top: 0;
+  left: 0;
+  width: 25%; /* Sidebar takes up 25% of the screen width */
+  height: 100%; /* Full height of the screen */
+  background-color: #6e76a4;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 1; /* Keeps sidebar above the content */
+}
+
+.sidebar img {
+  max-width: 100%;
+  height: auto;
+}
+
+.sidebar h2 {
+  color: #ffffff;
+  font-size: 36px; /* Reduced for a cleaner look */
+  margin: 20px 0;
+  text-align: center;
+}
+
+.sidebar h2 span {
+  display: block;
+}
+
+.sidebar p {
+  font-size: 18px;
+  color: #ffffff;
+  margin: 20px 0;
+}
+
+.sidebar a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+/* Positioning the footer (log in link) at the bottom */
+.sidebar .footer {
+  margin-top: auto;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/* Main Content */
+.main-section {
+  margin-left: 25%; /* Same as sidebar width */
+  padding: 40px; /* Added more padding for better spacing */
+  box-sizing: border-box;
+  background-color: #f4f4f9; /* Light background for contrast */
+  min-height: 100vh; /* Ensure full page height for scrolling */
+  overflow-y: auto;
+}
+
+/* Responsive Design */
+
+/* Adjust Sidebar for Medium Screens */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%; /* Full width on medium screens */
+    height: auto; /* Adjust height */
+    position: relative; /* No fixed position for mobile views */
   }
-  
+
+  .main-section {
+    margin-left: 0; /* Remove margin for mobile */
+    padding: 20px;
+  }
+
   .sidebar h2 {
-    color: #2ecc71;
+    font-size: 30px;
+  }
+
+  .sidebar p {
+    margin: 15px 0;
+  }
+}
+
+/* Adjust Sidebar for Small Screens */
+@media (max-width: 480px) {
+  .sidebar {
+    padding: 15px;
+  }
+
+  .sidebar h2 {
     font-size: 24px;
   }
-  
+
   .sidebar p {
-    margin-top: 20px;
+    font-size: 16px;
   }
-  
-  .sidebar a {
-    color: #3498db;
-    text-decoration: none;
+
+  .main-section {
+    padding: 15px;
   }
-  
+}

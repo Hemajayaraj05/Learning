@@ -8,6 +8,7 @@ import BankDetails from './BankDetails';
 import AccountCreated from './AccountCreated';
 import BuyerInfo from './BuyerInfo'; // Import BuyerInfo component
 import ServiceProviderInfo from './ServiceProviderInfo'; // Import ServiceProviderInfo component
+import LoginPage from './Login';
 import './App.css';
 
 function App() {
@@ -22,8 +23,9 @@ function App() {
             <Route path="/basic-info" element={<BasicInfo />} />
             <Route path="/bank-details" element={<BankDetails />} />
             <Route path="/account-created" element={<AccountCreated />} />
-            <Route path="/buyer-info" element={<BuyerInfo />} /> {/* Add route for BuyerInfo */}
-            <Route path="/service-provider-info" element={<ServiceProviderInfo />} /> {/* Add route for ServiceProviderInfo */}
+            <Route path="/buyer-info" element={<BuyerInfo />} /> {/* Route for BuyerInfo */}
+            <Route path="/service-provider-info" element={<ServiceProviderInfo />} /> {/* Route for ServiceProviderInfo */}
+            <Route path="/login" element={<LoginPage />} /> {/* Route for the Login page */}
           </Routes>
         </div>
       </div>

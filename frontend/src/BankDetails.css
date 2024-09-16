@@ -22,8 +22,8 @@
   }
   
   .stage.active {
-    background-color: white; /* Change background to white for dotted effect */
-    border: 2px dotted #2ecc71; /* Dotted border for active stage */
+    background-color: #2ecc71;/* Change background to white for dotted effect */
+   
   }
   
   h2 {

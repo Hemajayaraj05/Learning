@@ -1,11 +1,14 @@
 import React from 'react';
 import './SideBar.css';
+import { Link } from 'react-router-dom';
 
 function SideBar() {
   return (
     <div className="sidebar">
-      <h2>Creating an Account</h2>
-      <p>Already have an Account? <a href="/login">Log In</a></p>
+       <img src="LOGO.png" alt="Logo" />
+       <h2><span>Creating</span><span> an </span><span>Account</span></h2>
+
+      <p>Already have an Account?<Link to="/Login">Login</Link></p>
     </div>
   );
 }
