@@ -1,0 +1,78 @@
+/* Agreement Page Styles */
+.agreement-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.agreement-page h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Button Styles */
+.sign-agreement-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sign-agreement-button:hover {
+  background-color: #0056b3;
+}
+
+.pay-now-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.pay-now-button:hover {
+  background-color: #218838;
+}
+
+/* Payment Section Styles */
+.payment-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.amount-input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 200px;
+}
+.deploy-button {
+  background-color: #28a745; /* Green background color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.deploy-button:hover {
+  background-color: #218838; /* Darker green for hover effect */
+}

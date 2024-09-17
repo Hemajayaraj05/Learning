@@ -15,7 +15,8 @@
   .container{
    
     padding:20px;
-    background-color: #ccc;
+    margin:20px;
+    /* background-color: #ccc; */
   }
   
   .stage {

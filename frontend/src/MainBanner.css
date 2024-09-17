@@ -1,0 +1,63 @@
+
+
+.main-banner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 50px;
+    height: calc(100vh - 80px);
+    color: white;
+  }
+  
+  .banner-text {
+    text-align: left;
+    max-width: 600px;
+    padding: 20px;
+  }
+  
+  .banner-text h1 {
+
+    width: 705px;
+    height: 144px;
+    top: 292px;
+    left: 145px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Readex Pro;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: left;
+    color: #D2FBD0;
+  }
+  
+  .banner-text p {
+
+    width: 558px;
+    height: 108px;
+    top: 506px;
+    left: 145px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Readex Pro;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: left;
+    color: #FFFFFF;
+
+  }
+  
+  .cta-button {
+    background-color: #D2FBD0;
+    border: none;
+    padding: 15px 30px;
+    color:#3F7D20;
+    cursor: pointer;
+    font-family: Readex Pro;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: left;
+    margin-top: 20px;
+  }

@@ -6,16 +6,15 @@ const AccountCreated = () => {
   const navigate = useNavigate();
 
   const handleNext = () => {
-    // Handle the final action or navigate to the next page
-    console.log("Account Created Successfully");
-    navigate('/final-page'); // Replace with your actual final page route
+    // Navigate to the Dashboard page
+    navigate('/dashboard');
   };
 
   return (
     <div className="account-created">
       <h2>Account Created Successfully</h2>
       <button className="next-btn" onClick={handleNext}>
-        Next
+        Go to Dashboard
       </button>
     </div>
   );

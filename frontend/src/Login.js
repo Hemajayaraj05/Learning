@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import './Login.css';
-
+import { FaLock, FaEnvelope } from 'react-icons/fa'; // Importing icons for better UI
+import './Login.css'; // Import CSS file for styling
 
 const LoginPage = () => {
   const [formData, setFormData] = useState({
@@ -59,11 +59,11 @@ const LoginPage = () => {
       <h2>LOGIN</h2>
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="email">Email:</label>
+          <label>Email:</label>
           <div className="input-container">
+            <FaEnvelope className="icon" />
             <input
               type="email"
-              id="email"
               name="email"
               placeholder="Enter your email"
               value={formData.email}
@@ -73,11 +73,11 @@ const LoginPage = () => {
           {formErrors.email && <span>{formErrors.email}</span>}
         </div>
         <div>
-          <label htmlFor="password">Password:</label>
+          <label>Password:</label>
           <div className="input-container">
+            <FaLock className="icon" />
             <input
               type="password"
-              id="password"
               name="password"
               placeholder="Enter your password"
               value={formData.password}
