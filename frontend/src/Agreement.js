@@ -50,6 +50,9 @@ const AgreementPage = () => {
             placeholder="Enter amount"
             className="amount-input"
           />
+          <li>The contract covers the supply of agricultural produce as described by the farmer. You agree to the type, quantity, and quality of the produce as specified by the farmer before the contract is made.</li>
+          <li>You agree to pay the agreed-upon price for the produce, including any additional charges for delivery if applicable. Payment will be made through the specified method, and any delay in payment may incur penalties or interest, as outlined in the contract.</li>
+          <li>The farmer will deliver the produce to the location you specify within the agreed timeframe. Any delay or failure to deliver must be reported to the platform immediately. You understand that failure to accept delivery or delays caused by you may result in penalties or cancellation of the contract.</li>
           <button
             className="pay-now-button"
             onClick={handlePayment}
