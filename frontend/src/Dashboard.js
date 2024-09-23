@@ -8,6 +8,9 @@ const Dashboard = () => {
     { id: 1, name: 'Wheat', size: '15 acres', img: 'wheat.jpeg', farmName: 'Green Farm' },
     { id: 2, name: 'Rice', size: '10 acres', img: 'paddy.jpeg', farmName: 'Riverdale Farm' },
     { id: 3, name: 'Corn', size: '20 acres', img: 'corn.jpeg', farmName: 'Sunny Acres' },
+    { id: 3, name: 'Corn', size: '20 acres', img: 'corn.jpeg', farmName: 'Sunny Acres' },
+    { id: 3, name: 'Corn', size: '20 acres', img: 'corn.jpeg', farmName: 'Sunny Acres' },
+    { id: 3, name: 'Corn', size: '20 acres', img: 'corn.jpeg', farmName: 'Sunny Acres' },
   ];
 
   return (

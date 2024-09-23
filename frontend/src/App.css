@@ -19,7 +19,7 @@
 .main-section {
   flex: 1; /* Take the remaining space */
   padding: 20px;
-  background-color: #f4f4f4;
+  background-color: #ddd6d6;
   box-sizing: border-box; /* Include padding in the width */
 }
 
