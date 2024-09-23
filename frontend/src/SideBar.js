@@ -8,7 +8,7 @@ function SideBar() {
        <img src="LOGO.png" alt="Logo" />
        <h2><span>Creating</span><span> an </span><span>Account</span></h2>
 
-      <p>Already have an Account?<Link to="/Login">Login</Link></p>
+      <p>Already have an Account?<Link to="/login">Login</Link></p>
     </div>
   );
 }
