@@ -1,7 +1,9 @@
 .account-created {
     width: 75%;
     padding: 40px;
+    margin-left: 40px;
     background-color: white;
+    box-shadow:rgba(225, 223, 223, 0.863) 0px 0px 25px;
     text-align: center;
   }
   

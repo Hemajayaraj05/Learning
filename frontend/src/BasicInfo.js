@@ -141,6 +141,17 @@ const BasicInfo = () => {
             required
           />
         </div>
+        <div className="form-group">
+          <label>Registered City</label>
+          <input
+            type="text"
+            name="registeredCity"
+            placeholder="Enter Registered City"
+            value={formData.registeredCity}
+            onChange={handleChange}
+            required
+          />
+        </div>
 
         {/* Registered Mandi */}
         <div className="form-group">

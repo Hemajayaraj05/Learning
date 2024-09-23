@@ -37,6 +37,9 @@ function AppContent() {
       <div className="main-section">
         <Routes>
           <Route path="/" element={<Home />} />  {/* Home page without sidebar */}
+        </Routes>
+        <div class="main-sec">
+        <Routes>
           <Route path="/dashboard" element={<Dashboard />} />  {/* Dashboard page without sidebar */}
           <Route path="/login" element={<LoginPage />} />  {/* Login page without sidebar */}
           <Route path="/main-content" element={<MainContent />} />
@@ -48,7 +51,9 @@ function AppContent() {
           <Route path="/buyer-info" element={<BuyerInfo />} />
           <Route path="/service-provider-info" element={<ServiceProviderInfo />} />
           <Route path="/smart-contract" element={<SmartContract />} />
+
         </Routes>
+        </div>
       </div>
     </div>
   );
