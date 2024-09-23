@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { FaLock, FaEnvelope } from 'react-icons/fa'; // Importing icons for better UI
 import './Login.css'; // Import CSS file for styling
@@ -55,7 +56,7 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="container">
+    <div className="login-container"> {/* Added unique class here */}
       <h2>LOGIN</h2>
       <form onSubmit={handleSubmit}>
         <div>

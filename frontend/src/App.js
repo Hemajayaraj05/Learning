@@ -8,10 +8,11 @@ import BankDetails from './BankDetails';
 import AccountCreated from './AccountCreated';
 import BuyerInfo from './BuyerInfo';
 import ServiceProviderInfo from './ServiceProviderInfo';
-import Home from './Home';
-import AgreementPage from './Agreement'; // Import AgreementPage
-import Dashboard from './Dashboard'; // Import Dashboard component
-import SmartContract from './SmartContract'; // Import SmartContract component
+import Home from './Home'; 
+import AgreementPage from './Agreement'; 
+import Dashboard from './Dashboard'; 
+import SmartContract from './SmartContract'; 
+import LoginPage from './Login';  // Import the Login page
 import './App.css';
 
 function App() {
@@ -25,28 +26,28 @@ function App() {
 function AppContent() {
   const location = useLocation();
 
-  // Check if the current path is home or dashboard
-  const isHomeOrDashboardPage = location.pathname === '/' || location.pathname === '/dashboard';
+  // Conditionally hide the sidebar on the home, login, and dashboard pages
+  const hideSidebarRoutes = ['/', '/login', '/dashboard'];
+  const shouldHideSidebar = hideSidebarRoutes.includes(location.pathname);
 
   return (
-    <div className={`container ${isHomeOrDashboardPage ? 'full-page' : ''}`}>
-      {/* Conditionally render SideBar only if not on the home page or dashboard page */}
-      {!isHomeOrDashboardPage && <SideBar />}
-
-      {/* Render different layout for home, dashboard, and other pages */}
-      <div className={isHomeOrDashboardPage ? 'full-content' : 'main-section'}>
+    <div className="container">
+      {/* Render sidebar only if not on home, login, or dashboard pages */}
+      {!shouldHideSidebar && <SideBar />}
+      <div className="main-section">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/" element={<Home />} />  {/* Home page without sidebar */}
+          <Route path="/dashboard" element={<Dashboard />} />  {/* Dashboard page without sidebar */}
+          <Route path="/login" element={<LoginPage />} />  {/* Login page without sidebar */}
           <Route path="/main-content" element={<MainContent />} />
           <Route path="/email-verification" element={<EmailVerification />} />
           <Route path="/basic-info" element={<BasicInfo />} />
           <Route path="/bank-details" element={<BankDetails />} />
           <Route path="/account-created" element={<AccountCreated />} />
-          <Route path="/agreement" element={<AgreementPage />} /> {/* Route for AgreementPage */}
+          <Route path="/agreement" element={<AgreementPage />} />
           <Route path="/buyer-info" element={<BuyerInfo />} />
           <Route path="/service-provider-info" element={<ServiceProviderInfo />} />
-          <Route path="/smart-contract" element={<SmartContract />} /> {/* Route for SmartContract */}
+          <Route path="/smart-contract" element={<SmartContract />} />
         </Routes>
       </div>
     </div>
