@@ -42,8 +42,9 @@ const ServiceProviderInfo = () => {
   };
 
   const sendOtp = () => {
+    alert("OTP has been sent to your aadhar number");
     // Logic to send OTP
-    console.log('Sending OTP to:', formData.aadhaarNumber);
+    // console.log('Sending OTP to:', formData.aadhaarNumber);
   };
 
   return (

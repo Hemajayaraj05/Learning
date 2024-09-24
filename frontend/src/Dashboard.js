@@ -5,12 +5,42 @@ import './Dashboard.css'; // Import the combined CSS file
 const Dashboard = () => {
   // Example data for crops
   const crops = [
-    { id: 1, name: 'Wheat', size: '15 acres', img: 'wheat.jpeg', farmName: 'Green Farm' },
-    { id: 2, name: 'Rice', size: '10 acres', img: 'paddy.jpeg', farmName: 'Riverdale Farm' },
-    { id: 3, name: 'Corn', size: '20 acres', img: 'corn.jpeg', farmName: 'Sunny Acres' },
-    { id: 3, name: 'Corn', size: '20 acres', img: 'corn.jpeg', farmName: 'Sunny Acres' },
-    { id: 3, name: 'Corn', size: '20 acres', img: 'corn.jpeg', farmName: 'Sunny Acres' },
-    { id: 3, name: 'Corn', size: '20 acres', img: 'corn.jpeg', farmName: 'Sunny Acres' },
+    {
+      id: 1,
+      name: 'Wheat',
+      size: '15 acres',
+      img: 'wheat.jpeg',
+      farmName: 'Green Farm',
+      farmerName: 'John Doe', // Farmer's name
+      farmerProfile: 'farmer1.jpg', // Example profile picture for farmer
+      demand: '1000 kg',
+      expectedHarvestDate: 'October 2024',
+      offeringPrice: '$2.50 per kg'
+    },
+    {
+      id: 2,
+      name: 'Rice',
+      size: '10 acres',
+      img: 'paddy.jpeg',
+      farmName: 'Riverdale Farm',
+      farmerName: 'Jane Smith', // Farmer's name
+      farmerProfile: 'farmer2.jpg',
+      demand: '800 kg',
+      expectedHarvestDate: 'September 2024',
+      offeringPrice: '$3.00 per kg'
+    },
+    {
+      id: 3,
+      name: 'Corn',
+      size: '20 acres',
+      img: 'corn.jpeg',
+      farmName: 'Sunny Acres',
+      farmerName: 'Michael Johnson', // Farmer's name
+      farmerProfile: 'farmer3.jpg',
+      demand: '1500 kg',
+      expectedHarvestDate: 'November 2024',
+      offeringPrice: '$1.80 per kg'
+    }
   ];
 
   return (
@@ -59,16 +89,22 @@ const Dashboard = () => {
         <h1>Dashboard</h1>
         <div className="cards-container">
           {crops.map((crop) => (
-            <Link key={crop.id} to="/agreement" className="card-link">
-              <div className="card">
-                <img src={crop.img} alt={crop.name} className="crop-image" />
-                <div className="card-content">
-                  <h3>{crop.name}</h3>
-                  <p>Farm: {crop.farmName}</p>
-                  <p>Size: {crop.size}</p>
-                </div>
+            <div key={crop.id} className="card">
+              <img src={crop.img} alt={crop.name} className="crop-image" />
+              <div className="card-content">
+                <img src={crop.farmerProfile} alt="Farmer" className="farmer-profile" />
+                <h3>{crop.name}</h3>
+                <p>Farm: {crop.farmName}</p>
+                <p>Farmer: {crop.farmerName}</p> {/* Farmer's Name */}
+                <p>Size: {crop.size}</p>
+                <p>Demand: {crop.demand}</p>
+                <p>Expected Harvest: {crop.expectedHarvestDate}</p>
+                <p>Offering Price: {crop.offeringPrice}</p>
+                <Link to="/agreement" className="proceed-btn">
+                  Proceed to Agreement
+                </Link>
               </div>
-            </Link>
+            </div>
           ))}
         </div>
       </div>
