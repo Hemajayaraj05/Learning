@@ -210,7 +210,16 @@ const BasicInfo = () => {
           <label>Location</label>
           <div className="map-placeholder">
             {/* Placeholder for Google Maps component */}
-            <img src="https://via.placeholder.com/600x300?text=Map+Placeholder" alt="Map Placeholder" />
+            <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112018.69167307879!2d77.0136652178762!3d28.67216872665934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd37b03665eb%3A0xb24247b98b9d5de2!2sMinistry%20of%20Agriculture%20%26%20Farmers%20Welfare!5e0!3m2!1sen!2sin!4v1727166422192!5m2!1sen!2sin"
+      title="Google Map of India"
+      width="600" 
+      height="450"
+      style={{ border: 0 }}
+      allowFullScreen={true}
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+    ></iframe>
           </div>
           <input
             type="text"
