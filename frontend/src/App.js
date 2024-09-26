@@ -11,7 +11,9 @@ import ServiceProviderInfo from './ServiceProviderInfo';
 import Home from './Home'; 
 import AgreementPage from './Agreement'; 
 import Dashboard from './Dashboard'; 
-import SmartContract from './SmartContract'; 
+import SmartContract from './SmartContract';
+import PaymentSection from './PaymentSection'; 
+import SignAgreement from './SignAgreement';
 import LoginPage from './Login';  // Import the Login page
 import './App.css';
 
@@ -49,6 +51,8 @@ function AppContent() {
           <Route path="/account-created" element={<AccountCreated />} />
           <Route path="/agreement" element={<AgreementPage />} />
           <Route path="/buyer-info" element={<BuyerInfo />} />
+          <Route path="payment-section" element={<PaymentSection/>} />
+          <Route path="sign-agreement" element={<SignAgreement/>} />
           <Route path="/service-provider-info" element={<ServiceProviderInfo />} />
           <Route path="/smart-contract" element={<SmartContract />} />
 

@@ -1,0 +1,12 @@
+.smar {
+
+    display: flex;
+    margin-right: 100px;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.smar button {
+    margin-top: 100px    ;
+    margin-right: 400px;
+}

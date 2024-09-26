@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Web3 from 'web3';
 import AgreementContract from './Agreement.json'; // Ensure this path is correct
+// import './smart.css';
 
 const SmartContract = () => {
   const [web3, setWeb3] = useState(null);
@@ -56,7 +57,7 @@ const SmartContract = () => {
   };
 
   return (
-    <div>
+    <div className='smar'>
       <h1>Farmer-Buyer Agreement</h1>
       <button onClick={deployContract} disabled={loading}>
         {loading ? 'Deploying...' : 'Deploy Contract'}
