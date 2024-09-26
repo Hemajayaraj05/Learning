@@ -1,5 +1,5 @@
-.buyer-info-form {
-    width: 70%; /* Reduced width for a more compact look */
+.service-provider-info-form{
+    width: 60%; /* Reduced width for a more compact look */
     background-color: #fff;
     padding: 20px; /* Slightly reduced padding */
     border-radius: 8px; /* Softer corners */
@@ -8,7 +8,7 @@
     transition: box-shadow 0.3s ease-in-out;
   }
   
-  .buyer-info-form:hover {
+  .service-provider-info-form:hover {
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.12); /* Slight hover effect */
   }
   

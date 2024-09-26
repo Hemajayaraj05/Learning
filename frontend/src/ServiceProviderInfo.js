@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
-import './BasicInfo.css'; // Importing the CSS file
+import './service.css'; // Importing the CSS file
 
 const ServiceProviderInfo = () => {
   const [formData, setFormData] = useState({
@@ -210,16 +210,25 @@ const ServiceProviderInfo = () => {
           <label>Location</label>
           <div className="map-placeholder">
             {/* Placeholder for Google Maps component */}
-            <img src="https://via.placeholder.com/600x300?text=Map+Placeholder" alt="Map Placeholder" />
+            <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1822673.4422337187!2d73.35403075624998!3d26.8428444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db5ef32a80f7d%3A0x3fad0f97caf161dd!2sDepartment%20Of%20Agriculture!5e0!3m2!1sen!2sin!4v1727169662530!5m2!1sen!2sin"
+      title="Google Map of India"
+      width="600" 
+      height="450"
+      style={{ border: 0 }}
+      allowFullScreen={true}
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+    ></iframe>
           </div>
-          <input
+          {/* <input
             type="text"
             name="location"
             placeholder="Enter Location"
             value={formData.location}
             onChange={handleChange}
             required
-          />
+          /> */}
         </div>
 
         {/* Address Line 1 */}

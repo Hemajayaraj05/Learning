@@ -11,11 +11,11 @@ const Dashboard = () => {
       size: '15 acres',
       img: 'wheat.jpeg',
       farmName: 'Green Farm',
-      farmerName: 'John Doe', // Farmer's name
+      farmerName: 'Suresh', // Farmer's name
       farmerProfile: 'farmer1.jpg', // Example profile picture for farmer
       demand: '1000 kg',
       expectedHarvestDate: 'October 2024',
-      offeringPrice: '$2.50 per kg'
+      offeringPrice: 'Rs.160 per kg'
     },
     {
       id: 2,
@@ -23,11 +23,11 @@ const Dashboard = () => {
       size: '10 acres',
       img: 'paddy.jpeg',
       farmName: 'Riverdale Farm',
-      farmerName: 'Jane Smith', // Farmer's name
+      farmerName: 'Parthiv Patel', // Farmer's name
       farmerProfile: 'farmer2.jpg',
       demand: '800 kg',
       expectedHarvestDate: 'September 2024',
-      offeringPrice: '$3.00 per kg'
+      offeringPrice: 'Rs.180 per kg'
     },
     {
       id: 3,
@@ -35,11 +35,11 @@ const Dashboard = () => {
       size: '20 acres',
       img: 'corn.jpeg',
       farmName: 'Sunny Acres',
-      farmerName: 'Michael Johnson', // Farmer's name
+      farmerName: 'Gaurav', // Farmer's name
       farmerProfile: 'farmer3.jpg',
       demand: '1500 kg',
       expectedHarvestDate: 'November 2024',
-      offeringPrice: '$1.80 per kg'
+      offeringPrice: 'Rs.110 per kg'
     }
   ];
 

@@ -222,14 +222,7 @@ const BasicInfo = () => {
       referrerPolicy="no-referrer-when-downgrade"
     ></iframe>
           </div>
-          <input
-            type="text"
-            name="location"
-            placeholder="Enter Location"
-            value={formData.location}
-            onChange={handleChange}
-            required
-          />
+        
         </div>
 
         {/* Address Line 1 */}

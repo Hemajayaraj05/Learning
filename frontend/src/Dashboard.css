@@ -38,6 +38,10 @@
   flex-grow: 1; /* This makes sure the list grows and takes available space */
 }
 
+.sidebar-list Link{
+  color: #166b1f;
+}
+
 /* Sidebar link styles */
 .sidebar-link {
   text-decoration: none;
@@ -58,7 +62,7 @@
 
 .sidebar-link:hover {
   background-color: #edf2f7;
-  color: #2b6cb0;
+  color: #43b02b;
 }
 
 .sidebar-link.active {
