@@ -17,7 +17,7 @@ const AgreementPage = () => {
 
   const handleSignAgreement = () => {
     // Redirect to the contract page
-    window.location.href = 'http://localhost:3000/contract.html'; // Update this path if needed
+    window.location.href = 'https://backend-taupe-alpha.vercel.app/'; // Update this path if needed
   };
 
   const handlePayment = () => {
