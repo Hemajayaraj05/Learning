@@ -6,7 +6,7 @@ const MainBanner = () => {
   return (
     <div className="main-banner">
       <div className="banner-text">
-        <h1 style={{ color: "red", fontSize: "24px" }}>
+        <h1>
           Secure Contracts for Farmers
           and Guaranteed Produce for Buyers.
         </h1>
