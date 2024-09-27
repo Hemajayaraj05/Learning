@@ -1,5 +1,5 @@
 import React from 'react';
-import './Agreement.css';
+import './styles/Agreement.css';
 
 const SignAgreement = ({ onSignAgreement }) => {
   return (

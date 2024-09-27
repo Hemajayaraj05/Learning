@@ -15,7 +15,7 @@ import SmartContract from './SmartContract';
 import PaymentSection from './PaymentSection'; 
 import SignAgreement from './SignAgreement';
 import LoginPage from './Login';  // Import the Login page
-import './App.css';
+import './styles/App.css';
 
 function App() {
   return (

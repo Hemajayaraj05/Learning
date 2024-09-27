@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import './AccountCreated.css';
+import './styles/AccountCreated.css'
 
 const AccountCreated = () => {
   const navigate = useNavigate();

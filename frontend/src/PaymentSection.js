@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom'
-import './Agreement.css';
+import './styles/Agreement.css';
 
 
 const PaymentSection = ({ amount, setAmount, onPay, onDeploy }) => {

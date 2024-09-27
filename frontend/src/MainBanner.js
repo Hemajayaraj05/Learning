@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
-import "./MainBanner.css";
+import "./styles/MainBanner.css";
 
 const MainBanner = () => {
   return (

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './EmailVerification.css';
+import './styles/EmailVerification.css';
 
 const EmailVerification = () => {
   const [formData, setFormData] = useState({

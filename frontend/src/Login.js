@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { FaLock, FaEnvelope } from 'react-icons/fa'; // Importing icons for better UI
-import './Login.css'; // Import CSS file for styling
+import './styles/Login.css'; // Import CSS file for styling
 
 const LoginPage = () => {
   const [formData, setFormData] = useState({

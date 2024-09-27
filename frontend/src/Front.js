@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Front.css'; // Import the updated CSS file
+import './styles/Front.css'; // Import the updated CSS file
 import { FaUser, FaLock, FaEnvelope } from 'react-icons/fa'; // Import FontAwesome icons
 
 const RegistrationPage = () => {

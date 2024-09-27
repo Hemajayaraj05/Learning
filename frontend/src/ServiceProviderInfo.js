@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
-import './service.css'; // Importing the CSS file
+import './styles/service.css'; // Importing the CSS file
 
 const ServiceProviderInfo = () => {
   const [formData, setFormData] = useState({

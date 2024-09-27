@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Dashboard.css'; // Import the combined CSS file
+import './styles/Dashboard.css'; // Import the combined CSS file
 
 const Dashboard = () => {
   // Example data for crops
