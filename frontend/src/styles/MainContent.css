@@ -1,5 +1,5 @@
 .main-content {
-  width: 75%;
+  width: auto;
   padding: 40px;
   background-color: white;
 }
@@ -16,10 +16,10 @@
   border-radius: 50%;
   background-color: #ddd;
   display: flex;
-  justify-content: center; 
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
   font-size: 16px;
-  color: white; 
+  color: white;
 }
 
 .stage.active {
@@ -39,20 +39,19 @@ h3 {
   border: 1px solid #ddd;
   padding: 15px;
   border-radius: 8px;
-  box-shadow: 0px 4px 4px 0px ;
+  box-shadow: 0px 4px 4px 0px;
   margin-bottom: 30px;
   transition: border-color 0.3s;
 }
 
 .select:hover {
-  border-color: #2ecc71; 
+  border-color: #2ecc71;
 }
 
 .account-form label {
   display: block;
   font-size: 16px;
   cursor: pointer;
-  
 }
 
 button {
@@ -66,7 +65,7 @@ button {
 }
 
 button:hover {
-  background-color: #27ae60; 
+  background-color: #27ae60;
 }
 
 .selectbar {

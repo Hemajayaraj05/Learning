@@ -65,6 +65,7 @@
     cursor: pointer;
     border-radius: 4px;
     margin-left: 10px;
+    margin-top: 0px;
   }
   
   .send-otp-btn:hover {
